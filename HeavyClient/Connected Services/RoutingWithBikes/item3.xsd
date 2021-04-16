@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RoutingWithBikes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RoutingWithBikes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/RoutingWithBikes/RoutingWithBikes/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:complexType name="ArrayOfRouting">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Routing" nillable="true" type="tns:Routing" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRouting" nillable="true" type="tns:ArrayOfRouting" />
+  <xs:complexType name="Routing">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="duration" type="xs:float" />
+      <xs:element minOccurs="0" name="steps" nillable="true" type="tns:ArrayOfRouteStep" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="waypoints" nillable="true" type="tns:ArrayOfPoint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Routing" nillable="true" type="tns:Routing" />
+  <xs:complexType name="ArrayOfRouteStep">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RouteStep" nillable="true" type="tns:RouteStep" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRouteStep" nillable="true" type="tns:ArrayOfRouteStep" />
+  <xs:complexType name="RouteStep">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="distance" type="xs:float" />
+      <xs:element minOccurs="0" name="driving_side" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="location" nillable="true" type="tns:Point" />
+      <xs:element minOccurs="0" name="modifier" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RouteStep" nillable="true" type="tns:RouteStep" />
+  <xs:complexType name="Point">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="longitude" type="xs:double" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="station" nillable="true" type="q1:Station" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Point" nillable="true" type="tns:Point" />
+  <xs:complexType name="ArrayOfPoint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Point" nillable="true" type="tns:Point" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPoint" nillable="true" type="tns:ArrayOfPoint" />
+</xs:schema>

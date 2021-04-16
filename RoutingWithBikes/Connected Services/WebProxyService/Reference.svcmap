@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="29a1ca08-27b2-416d-9887-bbc50c791630" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/WebProxyService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WebProxyService.xsd" MetadataType="Schema" ID="69da8896-104f-4686-b079-88e64bdcb16c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebProxyService?xsd=xsd0" />
+    <MetadataFile FileName="WebProxyService.disco" MetadataType="Disco" ID="3ceca150-75f7-42f2-af33-b4d22ef750bf" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebProxyService?disco" />
+    <MetadataFile FileName="WebProxyService.wsdl" MetadataType="Wsdl" ID="ba363fac-6b4e-43bb-8e87-304f73325fda" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebProxyService?wsdl" />
+    <MetadataFile FileName="WebProxyService1.xsd" MetadataType="Schema" ID="3df59e61-a1e3-4b89-be94-0efdeff93bc0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebProxyService?xsd=xsd2" />
+    <MetadataFile FileName="WebProxyService2.xsd" MetadataType="Schema" ID="cb7cd741-ea85-44ec-a3f3-6385817adee2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebProxyService?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

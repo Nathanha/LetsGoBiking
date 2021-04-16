@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeavyClient", "HeavyClient\HeavyClient.csproj", "{3B636AB7-43FD-4356-858C-41EBF9AF4520}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3AA30AE-8B3E-4B69-A74D-2E30A77FE8B9} = {A3AA30AE-8B3E-4B69-A74D-2E30A77FE8B9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProxyService", "WebProxyService\WebProxyService.csproj", "{A3AA30AE-8B3E-4B69-A74D-2E30A77FE8B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingWithBikes", "RoutingWithBikes\RoutingWithBikes.csproj", "{3CA6897A-1516-4F0F-A6AD-E83E15FD762A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3AA30AE-8B3E-4B69-A74D-2E30A77FE8B9} = {A3AA30AE-8B3E-4B69-A74D-2E30A77FE8B9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B636AB7-43FD-4356-858C-41EBF9AF4520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B636AB7-43FD-4356-858C-41EBF9AF4520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B636AB7-43FD-4356-858C-41EBF9AF4520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B636AB7-43FD-4356-858C-41EBF9AF4520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AA30AE-8B3E-4B69-A74D-2E30A77FE8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AA30AE-8B3E-4B69-A74D-2E30A77FE8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AA30AE-8B3E-4B69-A74D-2E30A77FE8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AA30AE-8B3E-4B69-A74D-2E30A77FE8B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA6897A-1516-4F0F-A6AD-E83E15FD762A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA6897A-1516-4F0F-A6AD-E83E15FD762A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA6897A-1516-4F0F-A6AD-E83E15FD762A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA6897A-1516-4F0F-A6AD-E83E15FD762A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60A67094-39BE-4780-A17E-3190206E5892}
+	EndGlobalSection
+EndGlobal

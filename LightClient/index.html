@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Light (Web) Client</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">LetsGoBiking</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- Header -->
+
+    <!-- Choose destination -->
+    <form class="col-lg-10 offset-lg-1">
+        <div class='form-inline justify-content-center'>
+            <div class='form-group col-sm-4'>
+                <label for="input_start_address">Enter your starting point</label>
+                <input class="form-control" id="input_start_address" placeholder="Start address">
+            </div>
+            <div class='form-group col-sm-4'>
+                <label for="input_end_address">Enter your destination point</label>
+                <input class="form-control" id="input_end_address" placeholder="Destination">
+            </div>
+        </div>
+        <div class='form-inline justify-content-center'>
+            <div id="error-message" class="alert alert-danger form-group col-sm-4 form-inline justify-content-center" role="alert">
+                One of the two addresses has an incorrect syntax
+            </div>
+            <div id="loading-message" class="alert alert-primary form-group col-sm-4 form-inline justify-content-center" role="alert">
+                Loading...
+            </div>
+        </div>
+
+    </form> 
+    <!-- Choose destination -->
+
+
+
+    <div class="btn-get-itinaty-container">
+        <button type="submit" id="getItineraryBtn" onclick="getItinerary();" class="btn btn-primary btn-lg btn-block">Get Itinerary</button><br />
+    </div>
+
+    <!-- Display Routing -->
+    <div class="container itinary-info-container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto routing-title-container"><p id="routing-title"></p></div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm">
+                <div class="directions-skeleton"><p style=" text-align: center;line-height: 100px;">Tap get itineray button to display an itinerary</p></div>
+                <ul class="list-group directions" id="directions_list"></ul><br />
+            </div>
+
+            <div class="col-sm">
+                <div id="mapid"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Display Routing -->
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:LetsGoBiking
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</html>
